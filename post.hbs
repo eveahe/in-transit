@@ -8,11 +8,14 @@
 <h1 class="posttitle_transit" itemprop="headline">{{title}}</h1>
 </header>
 <div class="postcontent_transit" itemprop="articleBody">
+{{#if image}}
+<img src="{{image}}" alt="{{title}}">
+{{/if}}
 {{content}}
 </div>
 {{#if tags}}
 <div class="posttags_transit">
-Tags: {{tags separator=" | "}}
+Check out: {{tags separator=" | "}}
 </div>
 {{/if}}
     <div class="sharepost_transit">

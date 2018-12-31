@@ -1,6 +1,11 @@
 {{!< default}}
 {{> header}}
 <main class="main_transit" role="main">
+{{#tag}}
+<div class="article_transit tag_heading">
+<p>Posts Tagged: {{name}}</p>
+</div>
+{{/tag}}
 {{#foreach posts}}
 <article class="article_transit" role="article" itemscope itemtype="http://schema.org/Article">
 <header class="postheader_transit">
