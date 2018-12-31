@@ -1,0 +1,26 @@
+{{!< default}}
+{{> header}}
+<main class="main_transit" role="main">
+{{#foreach posts}}
+<article class="article_transit" role="article" itemscope itemtype="http://schema.org/Article">
+<header class="postheader_transit">
+<time class="date_transit" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+<h1 class="posttitle_transit" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+</header>
+<div class="postcontent_transit" itemprop="articleBody">
+{{content words="100"}}
+</div>
+{{#if tags}}
+<div class="posttags_transit">
+Tags: {{tags separator=" | "}}
+</div>
+{{/if}}
+{{/foreach}}
+</article>
+{{#if pagination}}
+<div class="pagination_transit">
+{{{pagination}}}
+</div>
+{{/if}}
+</main>
+{{> footer}}
