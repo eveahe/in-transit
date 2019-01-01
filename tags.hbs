@@ -1,29 +1,29 @@
 {{!< default}}
 {{> header}}
-<main class="main_transit" role="main">
+<main class="main-transit" role="main">
 {{#tag}}
-<div class="article_transit tag_heading">
+<div class="article-transit tag-heading">
 <p>Posts Tagged: {{name}}</p>
 </div>
 {{/tag}}
 {{#foreach posts}}
-<article class="article_transit" role="article" itemscope itemtype="http://schema.org/Article">
-<header class="postheader_transit">
-<h1 class="posttitle_transit" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
-<time class="date_transit" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+<article class="article-transit" role="article" itemscope itemtype="http://schema.org/Article">
+<header class="postheader-transit">
+<h1 class="posttitle-transit" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+<time class="date-transit" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
 </header>
-<div class="postcontent_transit" itemprop="articleBody">
+<div class="postcontent-transit" itemprop="articleBody">
 {{content words="100"}}
 </div>
 {{#if tags}}
-<div class="posttags_transit">
+<div class="posttags-transit">
 Tags: {{tags separator=" | "}}
 </div>
 {{/if}}
 {{/foreach}}
 </article>
 {{#if pagination}}
-<div class="pagination_transit">
+<div class="pagination-transit">
 {{{pagination}}}
 </div>
 {{/if}}
