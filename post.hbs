@@ -1,43 +1,43 @@
 {{!< default}}
 {{> header}}
-<main class="main_transit" role="main">
+<main class="main-transit" role="main">
 {{#post}}
-<article class="article_transit" role="article" itemscope itemtype="http://schema.org/Article">
-<header class="postheader_transit">
-<h1 class="posttitle_transit" itemprop="headline">{{title}}</h1>
-<div class="date_transit">
+<article class="article-transit" role="article" itemscope itemtype="http://schema.org/Article">
+<header class="postheader-transit">
+<h1 class="posttitle-transit" itemprop="headline">{{title}}</h1>
+<div class="date-transit">
 Posted on <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
 </div>
 </header>
-<div class="postcontent_transit" itemprop="articleBody">
+<div class="postcontent-transit" itemprop="articleBody">
 {{#if image}}
 <img src="{{image}}" alt="{{title}}">
 {{/if}}
 {{content}}
 </div>
 {{#if tags}}
-<div class="posttags_transit">
+<div class="posttags-transit">
 Check out more about: {{tags separator=" | "}}
 </div>
 {{/if}}
-    {{!-- <div class="sharepost_transit">
-    <h4 class="share_transit">Share this post: &nbsp;</h4>
-    <a class="share_transit icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_transit">Twitter</span></a>
-    <a class="share_transit icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_transit">Facebook</span></a>
-    <a class="share_transit icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_transit">Google+</span></a>
+    {{!-- <div class="sharepost-transit">
+    <h4 class="share-transit">Share this post: &nbsp;</h4>
+    <a class="share-transit icon-twitter" target="-blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis-transit">Twitter</span></a>
+    <a class="share-transit icon-facebook" target="-blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis-transit">Facebook</span></a>
+    <a class="share-transit icon-gplus" target="-blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis-transit">Google+</span></a>
     </div> --}}
         {{#if author}}
-        <footer class="postfooter_transit">
+        <footer class="postfooter-transit">
         <address itemscope itemtype="http://schema.org/Person">
-        {{#if author.profile_image}}
-        <div class="authorimage_transit"><img src="{{author.profile_image}}" itemprop="image" /></div>
+        {{#if author.profile-image}}
+        <div class="authorimage-transit"><img src="{{author.profile-image}}" itemprop="image" /></div>
         {{/if}}
-        {{!-- <h4 class="authorname_transit"><span itemprop="author">{{author.name}}</span></h4>
+        {{!-- <h4 class="authorname-transit"><span itemprop="author">{{author.name}}</span></h4>
         {{#if author.website}}
-        <div class="authorwebsite_transit"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
+        <div class="authorwebsite-transit"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
         {{/if}}
         </address>
-        <div class="authorbio_transit">
+        <div class="authorbio-transit">
         <p>{{author.bio}}</p>
         </div> --}}
         </footer>
@@ -45,7 +45,7 @@ Check out more about: {{tags separator=" | "}}
 </article>
 {{/post}}
 {{#if pagination}}
-<div class="pagination_transit">
+<div class="pagination-transit">
 {{{pagination}}}
 </div>
 {{/if}}
