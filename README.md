@@ -1,1 +1,1 @@
-#My ghost theme.
+# In Transit Ghost Theme
