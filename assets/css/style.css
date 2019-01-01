@@ -5,7 +5,7 @@
 body { 
     background: white;
     /* background: linear-gradient(70deg, yellow, white); */
-    font-family: monospace;
+    font-family: 'Inconsolata', monospace;
     /* text-align: center; */
 }
 
