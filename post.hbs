@@ -4,8 +4,10 @@
 {{#post}}
 <article class="article_transit" role="article" itemscope itemtype="http://schema.org/Article">
 <header class="postheader_transit">
-<time class="date_transit" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
 <h1 class="posttitle_transit" itemprop="headline">{{title}}</h1>
+<div class="date_transit">
+Posted on <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+</div>
 </header>
 <div class="postcontent_transit" itemprop="articleBody">
 {{#if image}}
@@ -15,29 +17,29 @@
 </div>
 {{#if tags}}
 <div class="posttags_transit">
-Check out: {{tags separator=" | "}}
+Check out more about: {{tags separator=" | "}}
 </div>
 {{/if}}
-    <div class="sharepost_transit">
+    {{!-- <div class="sharepost_transit">
     <h4 class="share_transit">Share this post: &nbsp;</h4>
     <a class="share_transit icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_transit">Twitter</span></a>
     <a class="share_transit icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_transit">Facebook</span></a>
     <a class="share_transit icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_transit">Google+</span></a>
-    </div>
+    </div> --}}
         {{#if author}}
         <footer class="postfooter_transit">
         <address itemscope itemtype="http://schema.org/Person">
         {{#if author.profile_image}}
         <div class="authorimage_transit"><img src="{{author.profile_image}}" itemprop="image" /></div>
         {{/if}}
-        <h4 class="authorname_transit"><span itemprop="author">{{author.name}}</span></h4>
+        {{!-- <h4 class="authorname_transit"><span itemprop="author">{{author.name}}</span></h4>
         {{#if author.website}}
         <div class="authorwebsite_transit"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
         {{/if}}
         </address>
         <div class="authorbio_transit">
         <p>{{author.bio}}</p>
-        </div>
+        </div> --}}
         </footer>
         {{/if}}
 </article>
