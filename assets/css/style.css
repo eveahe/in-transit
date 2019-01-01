@@ -129,8 +129,8 @@ img {
     border: 1px solid blue;
     box-shadow: 3px 4px 0px blue;
     text-decoration: none;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .blogtitle-transit:visited {
