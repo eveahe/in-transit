@@ -1,7 +1,7 @@
 {
   "name": "in-transit",
   "description": "A ghost blog theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "ghost": ">=2.0.0"
   },

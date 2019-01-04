@@ -236,3 +236,17 @@ ul.nav {
     color: red;
 }
 
+/*The below makes the site more responsive.*/
+@media only screen and (max-device-width: 768px){
+    /*Preventing the blog post titles from sizing too unevenly.*/
+    h1 {
+        font-size: 2em;
+        max-width: 100%;
+    }
+
+    /*Preventing the title from bleeding across the top.*/
+    .blogtitle-transit{
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
