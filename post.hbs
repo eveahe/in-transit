@@ -21,6 +21,7 @@ Check out more about: {{tags separator=" | "}}
 </div>
 {{/if}}
     {{!-- <div class="sharepost-transit">
+    {{!-- The share icons are commented out because I don't think I need them. Uncomment to get social.}}
     <h4 class="share-transit">Share this post: &nbsp;</h4>
     <a class="share-transit icon-twitter" target="-blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis-transit">Twitter</span></a>
     <a class="share-transit icon-facebook" target="-blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis-transit">Facebook</span></a>
@@ -32,6 +33,7 @@ Check out more about: {{tags separator=" | "}}
         {{#if author.profile-image}}
         <div class="authorimage-transit"><img src="{{author.profile-image}}" itemprop="image" /></div>
         {{/if}}
+        {{!-- Because my blog has just one author I have commmented out the author info at the bottom of each post. IF you uncomment this you may also want to make an author.hbs, to have a specific author page. --}}
         {{!-- <h4 class="authorname-transit"><span itemprop="author">{{author.name}}</span></h4>
         {{#if author.website}}
         <div class="authorwebsite-transit"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
@@ -44,6 +46,7 @@ Check out more about: {{tags separator=" | "}}
         {{/if}}
 </article>
 {{/post}}
+{{!-- You set in the Ghost admin how many posts you want to appear in each page. --}}
 {{#if pagination}}
 <div class="pagination-transit">
 {{{pagination}}}
