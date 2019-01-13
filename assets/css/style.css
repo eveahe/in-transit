@@ -205,6 +205,11 @@ img {
     text-align:center;
 }
 
+.tags{
+    text-align:center;
+    margin-top: .5em;
+}
+
 ul.nav {
     list-style-type: none;
     margin-top: 1.5em;

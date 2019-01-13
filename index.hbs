@@ -8,11 +8,6 @@
 <br>
 <time class="date-transit" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
 </header>
-{{!-- {{#if tags}}
-<div class="posttags-transit">
-Tags: {{tags separator=" | "}}
-</div>
-{{/if}} --}}
 {{/foreach}}
 </article>
 {{#if pagination}}
@@ -20,5 +15,10 @@ Tags: {{tags separator=" | "}}
 {{{pagination}}}
 </div>
 {{/if}}
+{{#get "tags" limit="all"}}
+    <div class="tags">
+        {{tags separator=" | "}}
+    </div>
+{{/get}}
 </main>
 {{> footer}}
