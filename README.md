@@ -22,3 +22,5 @@ The theme is very much primary color heavy at the moment, but that can be adjust
 
 There are some parts of the code that are commented out because they represent Ghost theme features that I am not using at the moment but might want to in the future (or that you might want to use as well). Please enjoy!
 
+# Release Notes
+*v 1.0.2. 13 January 2019.* Now with tags showing on the homepage. This was added because the number of posts on my blog increased. Would need another system for displaying tags (and perhaps a dedicated tag page) if the number of tags themselves increased.
